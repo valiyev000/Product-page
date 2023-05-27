@@ -1,0 +1,712 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    /* border: 1px solid black; */
+}
+
+#header-bar{
+    width: 100%;
+    height: 17vh;
+    position: fixed;
+    z-index: 5;
+}
+
+/* Header section 1 starting... */
+
+#header-section-1{
+    display: flex;
+    width: 100%;
+    height: 7vh;
+    background-color: #23856D;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-section-1-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 959px;
+    height: 5vh;
+}
+
+.section-1-div-elements{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+/* 3cu ve 4cu elementleri bold etmek ucun yazilan selectorlar basliyir */
+.section-1-div-elements:nth-child(3), .section-1-div-elements:nth-child(4){
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+}
+/* 3cu ve 4cu elementleri bold etmek ucun yazilan selectorlar bitir */
+
+/* a href linklerinin renglerini ve underline'i tenzimleme basliyir */
+.section-1-div-elements>a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+/* a href linklerinin renglerini ve underline'i tenzimleme bitir */
+
+/* Header section 1 ended. */
+
+/* Header section 2 starting... */
+
+#header-section-2{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    background-color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+}
+
+#header-section-2-div{
+    display: flex;
+    width: 1042px;
+    height: 6vh;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#brandname{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+}
+
+#navbar-tools{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+#login-bar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #23A6F0;
+}
+
+/* HEADİNG BİTDİ */
+/* ------------------------------- */
+/* NAV BASLİYİR */
+
+nav{
+    position: relative;
+    top: 17vh;
+    z-index: -5;
+    background-color: #FAFAFA;
+    width: 100%;
+    height: 11vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-div{
+    width: 71%;
+    display: flex;
+    gap: 1%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+#nav-div:first-child{
+    color: #252B42;
+}
+
+#nav-div :not(:first-child){
+    color: #BDBDBD;
+}
+/* NAV BITDI */
+/* -------------------------------------- */
+/* MAIN BASLIYIR */
+/* MAIN SECTION TOP BASLIYIR */
+
+main{
+    margin-top: 17vh;
+}
+
+#main-section-top{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: #FAFAFA;
+}
+#main-section-top-div-1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 21px;
+    width: 510px;
+    height: 550px;
+}
+
+#main-product-image{
+    position: relative;
+    background-image: url(./single-product-1-cover-2.svg);
+    width: 506px;
+    height: 450px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    cursor: pointer;
+}
+
+#main-product-image div:nth-child(1){
+    position: absolute;
+    font-size: 40px;
+    top: 250px;
+    left: 40px;
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+
+#main-product-image div:nth-child(2){
+    position: absolute;
+    font-size: 40px;
+    top: 250px;
+    right: 40px;
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+
+#main-product-more-image-2{
+    background-image: url(./single-product-1-thumb-1.svg);
+    width: 100px;
+    height: 75px;
+    cursor: pointer;
+}
+
+#main-product-more-image-3{
+    background-image: url(./single-product-1-thumb-2.svg);
+    width: 100px;
+    height: 75px;
+    cursor: pointer;
+}
+
+#main-section-top-div-2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 510px;
+    height: 550px;
+    padding: 11px 58px;
+}
+
+#product-name{
+    width: 160px;
+    height: 30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    margin-bottom: 14px;
+}
+
+#rating-bar>i{
+    color: yellow;
+}
+
+#rating-bar>span{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+#product-price{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+}
+
+#product-availability{
+    width: 159px;
+    height: 24px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #23A6F0;
+}
+
+#product-availability>span{
+    color: #737373;
+}
+
+#product-description{
+    margin-top: 32px;
+    margin-bottom: 27px;
+    width: 410px;
+    height: 60px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #858585;
+}
+
+#hr-1{
+    width: 380px;
+    color: #BDBDBD;
+}
+
+#product-color-select{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 67px;
+}
+
+#product-color-select>div{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#product-color-select>#blue-color{
+    background-color: #23A6F0;
+}
+
+#product-color-select>#green-color{
+    background-color: #2DC071;
+}
+
+#product-color-select>#brown-color{
+    background-color: #E77C40;
+}
+
+#product-color-select>#darkblue-color{
+    background-color: #252B42;
+}
+
+#action-buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#action-buttons>#product-select-options{
+    width: 148px;
+    height: 44px;
+    background: #23A6F0;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+#action-buttons>button:nth-last-child(-n+3){
+    width: 40px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+}
+/* MAIN SECTION TOP BITDI */
+/* MAIN SECTION CENTER BASLIYIR */
+
+#main-section-center{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    /* height: 74vh; */
+}
+
+#main-section-center-header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 9vh;
+    width: 73%;
+    gap: 5%;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+}
+
+#main-section-center-header>div{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+#main-section-center-header>div>span{
+    color: #23856D;
+}
+
+#hr-2{
+    width: 73%;
+    border: 1px solid #ECECEC;
+}
+
+#product-description-in-detail{
+    margin-top: 5vh;
+    /* height: 51vh; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+#product-description-in-detail-image{
+    background-image: url(./unsplash_QANOF9iJlFs.svg);
+    box-shadow: 10px 10px 0px 0px rgba(196,196,196,0.2);
+    width: 290px;
+    height: 50vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#product-description-in-detail-page-1{
+    width: 300px;
+    height: 50vh;
+}
+
+#product-description-in-detail-page-1>h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    margin-bottom: 3vh;
+}
+
+#product-description-in-detail-page-1>p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #737373;
+    margin-bottom: 3vh;
+}
+
+
+#product-description-in-detail-page-2{
+    width: 300px;
+    height: 50vh;
+}
+
+#product-description-in-detail-page-2>h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    margin-bottom: 3vh;
+}
+
+#product-description-in-detail-page-2>p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #737373;
+    cursor: pointer;
+    margin-bottom: 0.5vh;
+}
+
+/* MAIN SECTION CENTER BITDI */
+/* MAIN SECTION BOTTOM BASLIYIR */
+
+#main-section-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 48px;
+    background-color: #fafafa;
+}
+
+#bestseller-products-div{
+    width: 72%;
+}
+
+#bestseller-products-header{
+    margin: 48px 0 24px 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    text-transform: uppercase;
+}
+
+#hr-3{
+    height: 2px;
+    background: #ECECEC;
+}
+
+#bestseller-products-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 26px;
+    background-color: #FAFAFA;
+    margin-top: 24px;
+}
+
+.products-in-the-list{
+    position: relative;
+    width: 220px;
+    height: 407px;
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.products-in-the-list>div:nth-child(1){
+    position: absolute;
+    top: 305px;
+    left: 25px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+}
+
+.products-in-the-list>div:nth-child(2){
+    position: absolute;
+    top: 339px;
+    left: 25px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.products-in-the-list>div:nth-child(3){
+    position: absolute;
+    top: 378px;
+    left: 25px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1px;
+}
+
+.products-in-the-list>div:nth-child(3)>del{
+    color: #BDBDBD;
+    text-decoration: none;
+}
+
+.products-in-the-list>div:nth-child(3)>ins{
+    color: #23856D;
+    text-decoration: none;
+}
+
+.products-in-the-list:nth-child(1){
+    background-image: url(./product-1.svg);
+}
+
+.products-in-the-list:nth-child(2){
+    background-image: url(./product-2.svg);
+}
+
+.products-in-the-list:nth-child(3){
+    background-image: url(./product-3.svg);
+}
+
+.products-in-the-list:nth-child(4){
+    background-image: url(./product-4.svg);
+}
+
+.products-in-the-list:nth-child(5){
+    background-image: url(./product-5.svg);
+}
+
+.products-in-the-list:nth-child(6){
+    background-image: url(./product-6.svg);
+}
+
+.products-in-the-list:nth-child(7){
+    background-image: url(./product-7.svg);
+}
+
+.products-in-the-list:nth-child(8){
+    background-image: url(./product-8.svg);
+}
+
+/* MAIN SECTION BOTTOM BITDI */
+/* MAIN SECTION FOOTER BASLIYIR */
+
+#main-section-footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 175px;
+    background-color: #fafafa;
+}
+
+.partners-logos:nth-child(1){
+    background-image: url(./Vector.svg);
+    width: 103px;
+    height: 33px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.partners-logos:nth-child(2){
+    background-image: url(./Vector\ \(1\).svg);
+    width: 146px;
+    height: 59px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.partners-logos:nth-child(3){
+    background-image: url(./Vector\ \(2\).svg);
+    width: 152px;
+    height: 75px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.partners-logos:nth-child(4){
+    background-image: url(./Vector\ \(3\).svg);
+    width: 151px;
+    height: 42px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.partners-logos:nth-child(5){
+    background-image: url(./Vector\ \(4\).svg);
+    width: 151px;
+    height: 62px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.partners-logos:nth-child(6){
+    background-image: url(./Vector\ \(5\).svg);
+    width: 151px;
+    height: 72px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/* MAIN SECTION FOOTER BITDI */
+
+/* MAIN BITDI */
+
+
